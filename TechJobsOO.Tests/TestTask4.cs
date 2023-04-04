@@ -1,12 +1,12 @@
-﻿
+﻿using TechJobsOOAutoGraded6;
+using TechJobs.Tests;
+
 namespace TechJobsOO.Tests
 {
     [TestClass]
-	public class TestTask4
-	{
+    public class TestTask4
+    {
         //Task 4 Tests to verify students' unit tests.  Tests are numbered.
-
-        /* TODO: Task 4: Remove this line to uncomment the tests
 
         [TestMethod] //1
         public void Test_TestSettingJobIdExists()
@@ -73,9 +73,7 @@ namespace TechJobsOO.Tests
             //verify test was created
             Assert.AreEqual("true", existsCheck, "'TestJobsForEquality' not found");
         }
-
-    TODO: Task 4: Remove this line to uncomment the tests */
-
     }
 }
+
 
