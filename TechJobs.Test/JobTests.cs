@@ -69,19 +69,16 @@ Core Competency: {job3.JobCoreCompetency.Value}{Environment.NewLine}";
         public void TestToStringHandlesEmptyField()
         {
             //Is this meant to be a try catch. Meaning try the string interpolation with an instance of an object that is missing a field 
-           Job job5 = new Job("Product tester", new Employer("ACME"), new Location(), new PositionType("Quality control"), new CoreCompetency("Persistence")); 
+           Job job5 = new Job("Product tester", new Employer("ACME"), new Location(null), new PositionType("Quality control"), new CoreCompetency("Persistence")); 
             
-           
-            
-
             string expectedString = $@"
             {Environment.NewLine}
                ID: {job5.Id}
                Name: {job5.Name}
                Employer: {job5.EmployerName}
-               Location: ""Data not available""
-               Position Type: 
-               Core Competency: 
+               Location: Data not available
+               Position Type: { job5.JobType}
+               Core Competency: { job5.JobCoreCompetency}
             {Environment.NewLine}
             ";
 

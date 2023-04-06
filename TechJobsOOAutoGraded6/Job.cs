@@ -14,7 +14,7 @@ namespace TechJobsOOAutoGraded6
             public CoreCompetency? JobCoreCompetency { get; set; }
 
             // TODO: Task 3: Add the two necessary constructors.
-            public Job()
+        public Job()
         {
             Id = nextId;
             nextId++;
