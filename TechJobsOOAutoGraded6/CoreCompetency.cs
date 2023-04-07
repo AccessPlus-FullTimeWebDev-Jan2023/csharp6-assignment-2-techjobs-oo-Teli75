@@ -5,8 +5,9 @@ namespace TechJobsOOAutoGraded6
 	{
         public CoreCompetency(string value) : base(value)
         {
-            Value = value;
+        
         }
     }
 }
+
 

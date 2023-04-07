@@ -5,7 +5,7 @@ namespace TechJobsOOAutoGraded6
 	{
         public PositionType(string value) : base (value)
         {
-            Value = value;
+        
         }
     }
 }

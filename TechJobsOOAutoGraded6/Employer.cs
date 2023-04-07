@@ -1,4 +1,6 @@
 ﻿using System;
+using TechJobsOOAutoGraded6;
+
 namespace TechJobsOOAutoGraded6
 {
 	public class Employer: JobField
@@ -7,8 +9,10 @@ namespace TechJobsOOAutoGraded6
         public Employer(string value ) :base( value ) 
         { 
         }
+
     }
 }
+
 
 
 

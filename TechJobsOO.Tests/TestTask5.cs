@@ -28,27 +28,27 @@ namespace TechJobsOO.Tests
             Assert.AreEqual("true", existsCheck, "'TestToStringStartsAndEndsWithNewLine' not created");
         }
 
-        
-        //[TestMethod]  //2
-        //public void Test_TestToString_Starts_And_Ends_With_NewLine()
-        //{
-        //    //comparing output to a text file.
-        //    //id numbers may get a little wonky
 
-        //    //setup
-        //    string text = System.IO.File.ReadAllText("C:\\Users\\7teli\\Desktop\\LaunchCode\\C_Sharp\\assignment2\\csharp6-assignment-2-techjobs-oo-Teli75\\TechJobsOO.Tests\\StartsAndEndsWithNewLine.txt").ToString();
-        //    var stringWriter = new StringWriter();
-        //    Console.SetOut(stringWriter);
-        //    var job = new RunTechJobs();
-        //    job.RunProgram();
-        //    var output = stringWriter.ToString();
+        [TestMethod]  //2
+        public void Test_TestToString_Starts_And_Ends_With_NewLine()
+        {
+            //comparing output to a text file.
+            //id numbers may get a little wonky
 
-        //    //verify
-        //    Assert.AreEqual(text, output, "New Line issue");
-        //}
+            //setup
+            string text = System.IO.File.ReadAllText("C:\\Users\\7teli\\Desktop\\LaunchCode\\C_Sharp\\assignment2\\csharp6-assignment-2-techjobs-oo-Teli75\\TechJobsOO.Tests\\StartsAndEndsWithNewLine.txt").ToString();
+            var stringWriter = new StringWriter();
+            Console.SetOut(stringWriter);
+            var job = new RunTechJobs();
+            job.RunProgram();
+            var output = stringWriter.ToString();
+
+            //verify
+            Assert.AreEqual(text, output, "New Line issue");
+        }
 
         //Unit Test 2: TestToStringContainsCorrectLabelsAndData -----------------------
-        
+
 
         [TestMethod]  //3
         public void TestToStringContainsCorrectLabelsAndData_Exists()
@@ -74,7 +74,7 @@ namespace TechJobsOO.Tests
             Assert.AreEqual("true", existsCheck, "'TestToStringContainsCorrectLabelsAndData' not created");
         }
 
-        /*
+        
         [TestMethod]  //4
         public void Test_TestToStringContainsCorrectLabelsAndData()
         {
@@ -92,7 +92,7 @@ namespace TechJobsOO.Tests
             Assert.IsTrue(output.Contains($"Name: Product tester") && output.Contains("Employer: ACME") && output.Contains("Location: Desert") && output.Contains("Position Type: Quality control") && output.Contains("Core Competency: Persistence"));
         }
 
-        */
+        
         //Unit Test 3: TestToStringHandlesEmptyField --------------------
         
         [TestMethod] //5
